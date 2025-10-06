@@ -108,6 +108,18 @@
             PerformLayout();
         }
 
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            // Contoh logika saat combobox berubah
+            ComboBox comboBox = sender as ComboBox;
+            if (comboBox != null && comboBox.SelectedItem != null)
+            {
+                string selectedJurusan = comboBox.SelectedItem.ToString();
+                MessageBox.Show("Jurusan yang dipilih: " + selectedJurusan);
+            }
+        }
+
+
         #endregion
         private Label lblIDjurusan;
         private Label lblJurusan;

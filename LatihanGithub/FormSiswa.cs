@@ -16,5 +16,15 @@ namespace LatihanGithub
         {
             InitializeComponent();
         }
+
+        private void FormSiswa_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtNama_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
