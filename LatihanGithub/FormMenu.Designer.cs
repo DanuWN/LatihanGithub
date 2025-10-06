@@ -32,6 +32,7 @@
             masterToolStripMenuItem = new ToolStripMenuItem();
             exitToolStripMenuItem = new ToolStripMenuItem();
             menuToolStripMenuItem = new ToolStripMenuItem();
+            jurusanToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -46,7 +47,7 @@
             // 
             // masterToolStripMenuItem
             // 
-            masterToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { menuToolStripMenuItem });
+            masterToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { menuToolStripMenuItem, jurusanToolStripMenuItem });
             masterToolStripMenuItem.Name = "masterToolStripMenuItem";
             masterToolStripMenuItem.Size = new Size(55, 20);
             masterToolStripMenuItem.Text = "Master";
@@ -61,7 +62,13 @@
             // 
             menuToolStripMenuItem.Name = "menuToolStripMenuItem";
             menuToolStripMenuItem.Size = new Size(180, 22);
-            menuToolStripMenuItem.Text = "Menu";
+            menuToolStripMenuItem.Text = "Siswa";
+            // 
+            // jurusanToolStripMenuItem
+            // 
+            jurusanToolStripMenuItem.Name = "jurusanToolStripMenuItem";
+            jurusanToolStripMenuItem.Size = new Size(180, 22);
+            jurusanToolStripMenuItem.Text = "Jurusan";
             // 
             // FormMenu
             // 
@@ -84,5 +91,6 @@
         private ToolStripMenuItem masterToolStripMenuItem;
         private ToolStripMenuItem menuToolStripMenuItem;
         private ToolStripMenuItem exitToolStripMenuItem;
+        private ToolStripMenuItem jurusanToolStripMenuItem;
     }
 }
