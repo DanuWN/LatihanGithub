@@ -77,7 +77,7 @@
             // 
             // btnKembali
             // 
-            btnKembali.Location = new Point(418, 225);
+            btnKembali.Location = new Point(471, 225);
             btnKembali.Name = "btnKembali";
             btnKembali.Size = new Size(71, 29);
             btnKembali.TabIndex = 4;
