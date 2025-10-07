@@ -64,7 +64,7 @@
             cmbJurusan.Name = "cmbJurusan";
             cmbJurusan.Size = new Size(211, 23);
             cmbJurusan.TabIndex = 0;
-            cmbJurusan.SelectedIndexChanged += this.comboBox1_SelectedIndexChanged;
+            cmbJurusan.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
             // 
             // btnSimpan
             // 
@@ -77,7 +77,7 @@
             // 
             // btnKembali
             // 
-            btnKembali.Location = new Point(428, 225);
+            btnKembali.Location = new Point(418, 225);
             btnKembali.Name = "btnKembali";
             btnKembali.Size = new Size(71, 29);
             btnKembali.TabIndex = 4;
