@@ -57,18 +57,21 @@
             menuToolStripMenuItem.Name = "menuToolStripMenuItem";
             menuToolStripMenuItem.Size = new Size(114, 22);
             menuToolStripMenuItem.Text = "Siswa";
+            menuToolStripMenuItem.Click += menuToolStripMenuItem_Click;
             // 
             // jurusanToolStripMenuItem
             // 
             jurusanToolStripMenuItem.Name = "jurusanToolStripMenuItem";
             jurusanToolStripMenuItem.Size = new Size(114, 22);
             jurusanToolStripMenuItem.Text = "Jurusan";
+            jurusanToolStripMenuItem.Click += jurusanToolStripMenuItem_Click;
             // 
             // exitToolStripMenuItem
             // 
             exitToolStripMenuItem.Name = "exitToolStripMenuItem";
             exitToolStripMenuItem.Size = new Size(38, 20);
             exitToolStripMenuItem.Text = "Exit";
+            exitToolStripMenuItem.Click += exitToolStripMenuItem_Click;
             // 
             // FormMenu
             // 

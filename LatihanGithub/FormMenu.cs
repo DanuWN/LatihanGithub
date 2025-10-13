@@ -21,5 +21,22 @@ namespace LatihanGithub
         {
 
         }
+
+        private void menuToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormSiswa ds = new FormSiswa();
+            ds.ShowDialog();
+        }
+
+        private void jurusanToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormJurusan ds = new FormJurusan();
+            ds.ShowDialog();
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }
