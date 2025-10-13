@@ -64,7 +64,7 @@
             cmbJurusan.Name = "cmbJurusan";
             cmbJurusan.Size = new Size(211, 23);
             cmbJurusan.TabIndex = 0;
-            cmbJurusan.SelectedIndexChanged += this.comboBox1_SelectedIndexChanged;
+            cmbJurusan.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
             // 
             // btnSimpan
             // 
@@ -104,6 +104,7 @@
             Controls.Add(cmbJurusan);
             Name = "FormJurusan";
             Text = "FormJurusan";
+            Load += FormJurusan_Load;
             ResumeLayout(false);
             PerformLayout();
         }

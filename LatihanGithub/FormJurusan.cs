@@ -26,5 +26,10 @@ namespace LatihanGithub
         {
 
         }
+
+        private void FormJurusan_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
