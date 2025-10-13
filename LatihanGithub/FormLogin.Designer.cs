@@ -88,7 +88,7 @@
             lblStatus.Size = new Size(0, 15);
             lblStatus.TabIndex = 5;
             // 
-            // FormLogin
+            // FormLoginn
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
