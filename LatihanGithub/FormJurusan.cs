@@ -12,24 +12,6 @@ namespace LatihanGithub
 {
     public partial class FormJurusan : Form
     {
-        public FormJurusan()
-        {
-            InitializeComponent();
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblJurusan_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void FormJurusan_Load(object sender, EventArgs e)
-        {
-
-        }
+       
     }
 }
