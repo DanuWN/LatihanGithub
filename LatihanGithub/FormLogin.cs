@@ -14,7 +14,6 @@ namespace LatihanGithub
         {
             InitializeComponent();
 
-            // Set Enter key untuk pindah ke kontrol berikutnya
             this.txtUsername.KeyPress += TxtUsername_KeyPress;
             this.txtPassword.KeyPress += TxtPassword_KeyPress;
         }
@@ -112,6 +111,11 @@ namespace LatihanGithub
                     btnLogin.Enabled = true;
                 }
             }
+        }
+
+        private void FormLogin_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
