@@ -30,9 +30,9 @@
         {
             menuStrip1 = new MenuStrip();
             masterToolStripMenuItem = new ToolStripMenuItem();
-            exitToolStripMenuItem = new ToolStripMenuItem();
             menuToolStripMenuItem = new ToolStripMenuItem();
             jurusanToolStripMenuItem = new ToolStripMenuItem();
+            exitToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -52,23 +52,23 @@
             masterToolStripMenuItem.Size = new Size(55, 20);
             masterToolStripMenuItem.Text = "Master";
             // 
-            // exitToolStripMenuItem
-            // 
-            exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            exitToolStripMenuItem.Size = new Size(38, 20);
-            exitToolStripMenuItem.Text = "Exit";
-            // 
             // menuToolStripMenuItem
             // 
             menuToolStripMenuItem.Name = "menuToolStripMenuItem";
-            menuToolStripMenuItem.Size = new Size(180, 22);
+            menuToolStripMenuItem.Size = new Size(114, 22);
             menuToolStripMenuItem.Text = "Siswa";
             // 
             // jurusanToolStripMenuItem
             // 
             jurusanToolStripMenuItem.Name = "jurusanToolStripMenuItem";
-            jurusanToolStripMenuItem.Size = new Size(180, 22);
+            jurusanToolStripMenuItem.Size = new Size(114, 22);
             jurusanToolStripMenuItem.Text = "Jurusan";
+            // 
+            // exitToolStripMenuItem
+            // 
+            exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            exitToolStripMenuItem.Size = new Size(38, 20);
+            exitToolStripMenuItem.Text = "Exit";
             // 
             // FormMenu
             // 
@@ -79,6 +79,7 @@
             MainMenuStrip = menuStrip1;
             Name = "FormMenu";
             Text = "FormMenu";
+            Load += FormMenu_Load;
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
             ResumeLayout(false);
