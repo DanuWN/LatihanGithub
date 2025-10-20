@@ -36,12 +36,14 @@
             lblALamat = new TextBox();
             lblNIS = new TextBox();
             lblA = new TextBox();
+            dgvSiswa = new DataGridView();
+            ((System.ComponentModel.ISupportInitialize)dgvSiswa).BeginInit();
             SuspendLayout();
             // 
             // txtAlamat
             // 
             txtAlamat.AutoSize = true;
-            txtAlamat.Location = new Point(60, 160);
+            txtAlamat.Location = new Point(30, 90);
             txtAlamat.Margin = new Padding(2, 0, 2, 0);
             txtAlamat.Name = "txtAlamat";
             txtAlamat.Size = new Size(45, 15);
@@ -51,7 +53,7 @@
             // txtNIS
             // 
             txtNIS.AutoSize = true;
-            txtNIS.Location = new Point(60, 89);
+            txtNIS.Location = new Point(30, 30);
             txtNIS.Margin = new Padding(2, 0, 2, 0);
             txtNIS.Name = "txtNIS";
             txtNIS.Size = new Size(25, 15);
@@ -61,62 +63,81 @@
             // txtNama
             // 
             txtNama.AutoSize = true;
-            txtNama.Location = new Point(60, 127);
+            txtNama.Location = new Point(30, 60);
             txtNama.Margin = new Padding(2, 0, 2, 0);
             txtNama.Name = "txtNama";
             txtNama.Size = new Size(39, 15);
             txtNama.TabIndex = 3;
             txtNama.Text = "Nama";
+            txtNama.Click += txtNama_Click;
             // 
             // btnSimpan
             // 
-            btnSimpan.Location = new Point(335, 217);
-            btnSimpan.Margin = new Padding(2, 2, 2, 2);
+            btnSimpan.Location = new Point(530, 30);
+            btnSimpan.Margin = new Padding(2);
             btnSimpan.Name = "btnSimpan";
-            btnSimpan.Size = new Size(78, 20);
+            btnSimpan.Size = new Size(100, 30);
             btnSimpan.TabIndex = 4;
             btnSimpan.Text = "Simpan";
             btnSimpan.UseVisualStyleBackColor = true;
+            btnSimpan.Click += btnSimpan_Click;
             // 
             // btnKembali
             // 
-            btnKembali.Location = new Point(113, 217);
-            btnKembali.Margin = new Padding(2, 2, 2, 2);
+            btnKembali.Location = new Point(530, 70);
+            btnKembali.Margin = new Padding(2);
             btnKembali.Name = "btnKembali";
-            btnKembali.Size = new Size(78, 20);
+            btnKembali.Size = new Size(100, 30);
             btnKembali.TabIndex = 5;
             btnKembali.Text = "Kembali";
             btnKembali.UseVisualStyleBackColor = true;
+            btnKembali.Click += btnKembali_Click;
             // 
             // lblALamat
             // 
-            lblALamat.Location = new Point(130, 160);
-            lblALamat.Margin = new Padding(2, 2, 2, 2);
+            lblALamat.Location = new Point(100, 87);
+            lblALamat.Margin = new Padding(2);
+            lblALamat.Multiline = true;
             lblALamat.Name = "lblALamat";
-            lblALamat.Size = new Size(205, 23);
-            lblALamat.TabIndex = 7;
+            lblALamat.Size = new Size(400, 50);
+            lblALamat.TabIndex = 3;
             // 
             // lblNIS
             // 
-            lblNIS.Location = new Point(130, 89);
-            lblNIS.Margin = new Padding(2, 2, 2, 2);
+            lblNIS.Location = new Point(100, 27);
+            lblNIS.Margin = new Padding(2);
             lblNIS.Name = "lblNIS";
-            lblNIS.Size = new Size(205, 23);
-            lblNIS.TabIndex = 8;
+            lblNIS.Size = new Size(400, 23);
+            lblNIS.TabIndex = 1;
+            lblNIS.TextChanged += lblNIS_TextChanged;
             // 
             // lblA
             // 
-            lblA.Location = new Point(130, 127);
-            lblA.Margin = new Padding(2, 2, 2, 2);
+            lblA.Location = new Point(100, 57);
+            lblA.Margin = new Padding(2);
             lblA.Name = "lblA";
-            lblA.Size = new Size(205, 23);
-            lblA.TabIndex = 9;
+            lblA.Size = new Size(400, 23);
+            lblA.TabIndex = 2;
+            // 
+            // dgvSiswa
+            // 
+            dgvSiswa.AllowUserToAddRows = false;
+            dgvSiswa.AllowUserToDeleteRows = false;
+            dgvSiswa.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dgvSiswa.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvSiswa.Location = new Point(30, 160);
+            dgvSiswa.Name = "dgvSiswa";
+            dgvSiswa.ReadOnly = true;
+            dgvSiswa.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dgvSiswa.Size = new Size(600, 250);
+            dgvSiswa.TabIndex = 6;
             // 
             // FormSiswa
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(560, 270);
+            ClientSize = new Size(660, 430);
+            Controls.Add(dgvSiswa);
             Controls.Add(lblA);
             Controls.Add(lblNIS);
             Controls.Add(lblALamat);
@@ -125,10 +146,14 @@
             Controls.Add(txtNama);
             Controls.Add(txtNIS);
             Controls.Add(txtAlamat);
-            Margin = new Padding(2, 2, 2, 2);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            Margin = new Padding(2);
+            MaximizeBox = false;
             Name = "FormSiswa";
-            Text = "FormSiswa";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Data Siswa";
             Load += FormSiswa_Load;
+            ((System.ComponentModel.ISupportInitialize)dgvSiswa).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -142,5 +167,6 @@
         private TextBox lblALamat;
         private TextBox lblNIS;
         private TextBox lblA;
+        private DataGridView dgvSiswa;
     }
 }
