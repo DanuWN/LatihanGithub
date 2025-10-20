@@ -16,6 +16,19 @@ namespace LatihanGithub
 
             this.txtUsername.KeyPress += TxtUsername_KeyPress;
             this.txtPassword.KeyPress += TxtPassword_KeyPress;
+            this.chkShowPassword.CheckedChanged += ChkShowPassword_CheckedChanged;
+        }
+
+        private void ChkShowPassword_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkShowPassword.Checked)
+            {
+                txtPassword.PasswordChar = '\0'; // Tampilkan password
+            }
+            else
+            {
+                txtPassword.PasswordChar = '*'; // Sembunyikan password
+            }
         }
 
         private void TxtUsername_KeyPress(object sender, KeyPressEventArgs e)

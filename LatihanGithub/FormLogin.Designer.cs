@@ -34,6 +34,7 @@
             txtPassword = new TextBox();
             btnLogin = new Button();
             lblStatus = new Label();
+            chkShowPassword = new CheckBox();
             SuspendLayout();
             // 
             // lblUsername
@@ -71,10 +72,10 @@
             // 
             // btnLogin
             // 
-            btnLogin.Location = new Point(110, 110);
+            btnLogin.Location = new Point(110, 130);
             btnLogin.Name = "btnLogin";
             btnLogin.Size = new Size(200, 30);
-            btnLogin.TabIndex = 4;
+            btnLogin.TabIndex = 5;
             btnLogin.Text = "Login";
             btnLogin.UseVisualStyleBackColor = true;
             btnLogin.Click += btnLogin_Click;
@@ -83,16 +84,27 @@
             // 
             lblStatus.AutoSize = true;
             lblStatus.ForeColor = Color.Red;
-            lblStatus.Location = new Point(110, 155);
+            lblStatus.Location = new Point(110, 175);
             lblStatus.Name = "lblStatus";
             lblStatus.Size = new Size(0, 15);
-            lblStatus.TabIndex = 5;
+            lblStatus.TabIndex = 6;
             // 
-            // FormLoginn
+            // chkShowPassword
+            // 
+            chkShowPassword.AutoSize = true;
+            chkShowPassword.Location = new Point(110, 100);
+            chkShowPassword.Name = "chkShowPassword";
+            chkShowPassword.Size = new Size(121, 19);
+            chkShowPassword.TabIndex = 4;
+            chkShowPassword.Text = "Tampilkan Password";
+            chkShowPassword.UseVisualStyleBackColor = true;
+            // 
+            // FormLogin
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(350, 200);
+            ClientSize = new Size(350, 220);
+            Controls.Add(chkShowPassword);
             Controls.Add(lblStatus);
             Controls.Add(btnLogin);
             Controls.Add(txtPassword);
@@ -117,5 +129,6 @@
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.Label lblStatus;
+        private System.Windows.Forms.CheckBox chkShowPassword;
     }
 }
